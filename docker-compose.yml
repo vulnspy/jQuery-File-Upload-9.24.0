@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  web:
+    image: vsplate/php7-apache-ghostscript9.23:latest
+    volumes:
+      - ./html:/var/www/html/
+    ports:
+      - "80:80"
